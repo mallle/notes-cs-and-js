@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Javascript Notes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="./base.css">
+</head>
+
+<body>
+    <header class="section">
+        <div class="container">
+            <h1 class="title is-1">Notes for <a href="#cs-basics">CS Basics</a> and <a href="#javascript">Javascript</a>
+            </h1>
+        </div>
+    </header>
+    <nav class="section">
+        <div class="container">
+            <h4 class="title is-4">Table of Content</h4>
+            <div class="columns">
+                <div class="column">
+                    <button class="accordion">CS Basics</button>
+                    <div class="panel">
+                        <div class="content">
+                            <ul>
+                                <li><a href="#paths">Paths</a></li>
+                                <li><a href="#terminal">Terminal/Commands (MAC)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <button class="accordion">Javascript</button>
+                    <div class="panel">
+                        <div class="content">
+                            <ul>
+                                <li><a href="#variables">Variables</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="scrolling-box">
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2" id="cs-basics">CS Basics</h2>
+                <h3 class="title is-3" id="paths"><strong>Paths</strong></h3>
+                <div class="section-content">
+                    <div class="content">
+                        <p>Paths are used to reference other files in a filesystem. For example used to referencing an
+                            image, a
+                            .js or .css file</p>
+                    </div>
+                    <h4 class="title is-4">Relative Paths</h4>
+                    <div class="content">
+                        <p>Relative paths have the current directory as a starting point.</p>
+                        <p>Reference a file in the current folder:</p>
+                        <div class="notification">
+                            src="./filename.js"
+                        </div>
+                        <p>References a file in a folder above the current folder:</p>
+                        <div class="notification">
+                            src="../filename.js"
+                        </div>
+                    </div>
+                    <h4 class="title is-4">Absolute Paths</h4>
+                    <div class="content">
+                        <p>Absolute paths start at the root directory (the top-level directory) of a system.</p>
+                        <p>Reference a file on a server:</p>
+                        <div class="notification">
+                            src="https://www.mordbeitisch.de/_nuxt/img/3221c86.jpg"
+                        </div>
+                        <p>Reference a file on your local system (This file is located in the Users directory):</p>
+                        <div class="notification">
+                            src="/Users/mordbeitisch.jpg"
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title is-3" id="terminal">Terminal/Commands (MAC)</h3>
+                <div class="section-content">
+                    <div class="content">
+                        <p></p>A small list of useful commands for the terminal.</p>
+                        <p>Show current directory:</p>
+                        <div class="notification">~ pwd</div>
+                        <p>Change directory:</p>
+                        <div class="notification">~ cd <em>name-of-directory</em></div>
+                        <p>Go back one level/directory:</p>
+                        <div class="notification">~ cd ..</div>
+                        <p>List of directories and files in the current directory:</p>
+                        <div class="notification">~ ls</div>
+                        <p>List of directories and files in the current directory as a long ist format:</p>
+                        <div class="notification">~ ls l</div>
+                        <p>Make a new directory:</p>
+                        <div class="notification">~ mkdir <em>name-of-directory</em></div>
+                    </div>
+                </div>
+
+                <!-- <h3 class="title is-3" id="#"></h3>
+                <div class="section-content">
+                    <div class="content">
+                        <p></p>
+                        <div class="notification"></div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-2" id="javascript">Javascript</h2>
+                <h3 class="title is-3" id="variables">Variables</h3>
+            </div>
+        </section>
+    </main>
+    <script src="./base.js"></script>
+</body>
+
+</html>

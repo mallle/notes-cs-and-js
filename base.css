@@ -1,0 +1,60 @@
+a {
+    color: #00d1b2;
+}
+
+a:hover {
+    color: #08b198;
+}
+
+.section-content{
+    margin: 0 0 28px 24px;
+}
+
+/*Button on accordion*/
+.accordion{
+    background: #00d1b2;
+    color: #f5f5f5;
+    text-align: left;
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    outline: none;
+}
+
+/*Change color of panel if active or hovered. The class .active will be added with javascript*/
+.active, .accordion:hover {
+    background-color: #08b198;
+}
+
+/* Unicode character for "plus" sign (+) */
+.accordion:after {
+    content: '\002B';
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+    margin-top: -2px;
+  }
+
+/* Unicode character for "minus" sign (-) */
+.active:after {
+  content: "\2212"; 
+  transition: 0.4s;
+}
+
+.panel {
+    padding: 0px 16px;
+    background-color: #fff;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel >.content,
+.content > ul{
+    margin: 12px;
+}
